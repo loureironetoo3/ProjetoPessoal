@@ -1,62 +1,109 @@
 body{
     font-family: 'Oswald', sans-serif;
-    max-width: 100vw;
     box-sizing: border-box;
     background-color: #FAF7FD;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:visited{
-    color: black;
-}
-
-div#box_principal{
-    max-width: 100%;
-    height: 100vh;
-    border: 2px solid red;
-    display: flex;
-}
-
-div#box_esquerda{
-    border: 2px solid blue;
-    width: 35%;
-    display: flex;
-    justify-content: center;
-   border-image: url("/img/bg.png") 90/90px;
-}
-
-.logo_nav{
-    margin-top: 3.5rem;
-    width: 10rem;
-}
-
-.img_portfolio{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid red;
-    padding: 5px;
-}
-
-div#box_esquerda li{
-    border: 0.2rem solid red;
-    text-align: center;
-    margin-top: 2.5rem;
+    max-width: 100vw;
     
 }
 
-
-
-div#box_direita{
-    border: 2px solid olivedrab;
-    width: 65%;
+a, a:visited {
+text-decoration: none;
+color:black;
 }
 
-footer{
-border: 2px solid black;
+
+.container-principal{
 width: 100%;
-height: 250px;
+height: 100vh;
+display: flex;
+border:2px solid black;
+}
+
+.box-esquerda{
+width:35%;
+border: 2px solid red;
+display:block;
+}
+
+.content-header{
+border: 2px solid green;
+height:30%;
+display: flex;
+justify-content: center;
+}
+
+.box-logo{
+
+}
+
+.box-logo>img{
+width:10rem;
+}
+
+.content-img{
+border: 2px solid darkblue;
+height:30%;
+display: flex;
+justify-content: center;
+}
+
+.box-img{
+margin-top: 1rem;
+}
+
+.box-img>img{
+width: 9rem;
+border:0.3rem solid pink;
+border-radius: 50%;
+padding: 0.2rem;
+}
+
+.fontInsta{
+font-size: 1.5rem;
+margin-top: 1rem;
+margin-left: 1.8rem;
+}
+
+.content-links{
+border: 2px solid orange;
+height:38.5%;
+display: flex;
+align-items:center;
+justify-content: center;
+}
+
+.box-links{
+
+}
+
+.list-links li{
+
+margin-top: 2rem;
+}
+
+.list-links a{
+width: 3rem;
+border: 1px solid green;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.box-direita{
+width:65%;
+border: 2px solid blue;
+}
+
+footer {
+width:100%;
+height:20vh;
+border:2px solid gray;
 }
