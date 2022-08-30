@@ -1,0 +1,62 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    max-width: 100vw;
+    box-sizing: border-box;
+    background-color: #FAF7FD;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+div#box_principal{
+    max-width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    display: flex;
+}
+
+div#box_esquerda{
+    border: 2px solid blue;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+   border-image: url("/img/bg.png") 90/90px;
+}
+
+.logo_nav{
+    margin-top: 3.5rem;
+    width: 10rem;
+}
+
+.img_portfolio{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 5px;
+}
+
+div#box_esquerda li{
+    border: 0.2rem solid red;
+    text-align: center;
+    margin-top: 2.5rem;
+    
+}
+
+
+
+div#box_direita{
+    border: 2px solid olivedrab;
+    width: 65%;
+}
+
+footer{
+border: 2px solid black;
+width: 100%;
+height: 250px;
+}
