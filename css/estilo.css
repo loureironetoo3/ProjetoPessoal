@@ -3,14 +3,12 @@ body{
     box-sizing: border-box;
     background-color: #FAF7FD;
     max-width: 100vw;
-    
 }
 
 a, a:visited {
 text-decoration: none;
 color:black;
 }
-
 
 .container-principal{
 width: 100%;
@@ -26,7 +24,7 @@ display:block;
 }
 
 .content-header{
-border: 2px solid green;
+
 height:30%;
 display: flex;
 justify-content: center;
@@ -41,61 +39,67 @@ width:10rem;
 }
 
 .content-img{
-border: 2px solid darkblue;
-height:30%;
+
+height:38.5%;
 display: flex;
 justify-content: center;
 }
 
 .box-img{
-margin-top: 1rem;
+margin-top: 2.2rem;
 }
 
 .box-img>img{
-width: 9rem;
-border:0.3rem solid pink;
+width: 12rem;
+border:0.2rem solid #d53a9d;
 border-radius: 50%;
 padding: 0.2rem;
 }
 
 .fontInsta{
-font-size: 1.5rem;
+font-size: 1.8rem;
 margin-top: 1rem;
-margin-left: 1.8rem;
+margin-left: 2.5rem;
+color:#d53a9d;
 }
 
 .content-links{
-border: 2px solid orange;
-height:38.5%;
+
+height:30%;
 display: flex;
-align-items:center;
-justify-content: center;
-}
-
-.box-links{
 
 }
 
-.list-links li{
-
-margin-top: 2rem;
+.social-fields{
+padding-top: 1rem;
 }
 
-.list-links a{
-width: 3rem;
-border: 1px solid green;
-
+.social-field{
+padding:0.4rem;
+border-radius: 4px;
+width:90%;
+cursor: pointer;
+margin-top: 2.0rem;
+margin-left: 9rem;
 }
 
+.content-links a{
+color: white;
+}
 
+.social-field a i{
+margin: 0 0.5rem;
+}
 
-
-
-
-
-
-
-
+.social-field.facebook {
+background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+.social-field.twitter {
+background: linear-gradient(to right, #56a7f2, #468aca);
+}
+.social-field.linkedin {
+background: linear-gradient(to right, #0E76A8, #468aca);
+}
 
 .box-direita{
 width:65%;
