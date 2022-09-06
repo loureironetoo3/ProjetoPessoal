@@ -1,113 +1,162 @@
 body{
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
-    background-color: #FAF7FD;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
     max-width: 100vw;
 }
 
-a, a:visited {
-text-decoration: none;
-color:black;
-}
-
 .container-principal{
-width: 100%;
+width: 90%;
 height: 100vh;
 display: flex;
+margin: 0 4rem;
+background-color: #FAF7FD;
 border:2px solid black;
 }
 
 .box-esquerda{
-width:35%;
+width:20%;
 border: 2px solid red;
 display:block;
 }
 
 .content-header{
-
 height:30%;
 display: flex;
 justify-content: center;
 }
 
 .box-logo{
-
+margin-top: 0.5rem;
 }
 
 .box-logo>img{
-width:10rem;
+width:11rem;
 }
 
 .content-img{
-
 height:38.5%;
 display: flex;
 justify-content: center;
 }
 
 .box-img{
-margin-top: 2.2rem;
+margin-top: 3rem;
 }
 
 .box-img>img{
-width: 12rem;
+width: 12.5rem;
 border:0.2rem solid #d53a9d;
 border-radius: 50%;
 padding: 0.2rem;
 }
 
 .fontInsta{
-font-size: 1.8rem;
+font-size: 2rem;
 margin-top: 1rem;
 margin-left: 2.5rem;
 color:#d53a9d;
 }
 
 .content-links{
-
-height:30%;
+height:31.2%;
 display: flex;
-
+flex-direction: column;
 }
 
-.social-fields{
-padding-top: 1rem;
-}
-
-.social-field{
-padding:0.4rem;
-border-radius: 4px;
-width:90%;
+.social-field {
+width: 70%;
+height: 25%;
+border-radius: 6px;
 cursor: pointer;
-margin-top: 2.0rem;
-margin-left: 9rem;
+margin-top: 2rem;
+margin-left: 3rem;
 }
 
-.content-links a{
-color: white;
+.social-field a i {
+margin: 1rem 4rem 0 1rem;
 }
 
-.social-field a i{
-margin: 0 0.5rem;
+.social-field a {
+text-decoration: none;
+color: #FAF7FD;
 }
 
-.social-field.facebook {
-background: linear-gradient(to right, #1e3c72, #2a5298);
+.social-field.facebook{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
 }
-.social-field.twitter {
-background: linear-gradient(to right, #56a7f2, #468aca);
+.social-field.twitter{
+    background: linear-gradient(to right, #56a7f2, #468aca);
 }
-.social-field.linkedin {
-background: linear-gradient(to right, #0E76A8, #468aca);
+.social-field.linkedin{
+    background: linear-gradient(to right, #0E76A8, #468aca);
 }
 
 .box-direita{
-width:65%;
+width:80%;
 border: 2px solid blue;
+position: relative;
 }
 
+.content-direita{
+width: 100%;
+height: 100%;
+border: 2px solid green;
+display: flex;
+flex-direction: column;
+}
+
+.titulo{
+display: flex;
+justify-content: center;
+width: 100%;
+height: auto;
+border: 2px solid green;
+position: relative;
+}
+
+.titulo h1{
+font-size: 5rem;
+position: relative;
+}
+
+.titulo h1::before{
+content: '';
+position: absolute;
+height: 5px;
+width: 9rem;
+background: linear-gradient(45deg, #8e2de2, #4a00e0);
+top: 4.9rem;
+left: 0.1rem;
+}
+
+.flex img{
+max-width: 250px;
+max-height: 100%;
+display: block;
+}
+.flex{
+display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+margin 0 auto;
+}
+.flex > div{
+flex: 1 1 16rem;
+margin: 10px;
+}
+
+.content-direita section{
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto;
+border: 2px solid darkmagenta;
+
+}
+    
 footer {
 width:100%;
 height:20vh;
+background: #1e3c72;
 border:2px solid gray;
 }
