@@ -1,22 +1,23 @@
 body{
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
-    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background: linear-gradient(#FDC7FF, #F79CFA);
     max-width: 100vw;
 }
 
 .container-principal{
 width: 90%;
-height: 100vh;
+min-height: 100vh;
+
 display: flex;
 margin: 0 4rem;
 background-color: #FAF7FD;
-border:2px solid black;
+border:2px solid #FFE1FF;
 }
 
 .box-esquerda{
 width:20%;
-border: 2px solid red;
+
 display:block;
 }
 
@@ -94,14 +95,12 @@ color: #FAF7FD;
 
 .box-direita{
 width:80%;
-border: 2px solid blue;
 position: relative;
 }
 
 .content-direita{
 width: 100%;
 height: 100%;
-border: 2px solid green;
 display: flex;
 flex-direction: column;
 }
@@ -111,7 +110,6 @@ display: flex;
 justify-content: center;
 width: 100%;
 height: auto;
-border: 2px solid green;
 position: relative;
 }
 
@@ -133,24 +131,31 @@ left: 0.1rem;
 .flex img{
 max-width: 250px;
 max-height: 100%;
-display: block;
 }
 .flex{
 display: flex;
 flex-wrap: wrap;
 max-width: 100%;
-margin 0 auto;
+
 }
 .flex > div{
+display:flex;
+flex-direction: column;
+align-items:center;
 flex: 1 1 16rem;
-margin: 10px;
+margin: 2rem 1.5rem 1rem 1.5rem;
+border: 1px solid green;
+border-radius: 1.5rem;
+padding:0.5rem;
+cursor: pointer;
+}
+
+.flex > div:hover{
+border:3px solid green;
 }
 
 .content-direita section{
 display: flex;
-flex-wrap: wrap;
-margin: 0 auto;
-border: 2px solid darkmagenta;
 
 }
     
