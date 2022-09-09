@@ -8,7 +8,6 @@ body{
 .container-principal{
 width: 90%;
 min-height: 100vh;
-
 display: flex;
 margin: 0 4rem;
 background-color: #FAF7FD;
@@ -17,7 +16,6 @@ border:2px solid #FFE1FF;
 
 .box-esquerda{
 width:20%;
-
 display:block;
 }
 
@@ -164,4 +162,44 @@ width:100%;
 height:20vh;
 background: #1e3c72;
 border:2px solid gray;
+}
+
+@media screen and (max-width:480px) {
+
+body{
+max-width: 480px;
+} 
+.container-principal{
+display: flex;
+flex-direction: column;    
+}
+
+.box-esquerda{
+width: auto;
+}
+
+.content-header{
+margin-top: 1rem;
+}
+
+.content-img{
+margin-bottom: 2rem;
+}
+
+.social-field a i {
+margin: 0.8rem 5rem 0.8rem 1rem;
+}
+
+.box-direita{
+width: auto;
+}
+
+.titulo{
+margin:2rem 0;
+}
+
+.titulo h1{
+font-size: 4rem;
+}
+
 }
