@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300&display=swap');
 
-*{
-    padding:0;
-    margin:0;
-    border:0;
-    box-sizing:border-box;
-    text-decoration:none;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-body{
-    background:#f2cca6;
+body {
+    background: #f2cca6;
     width: 100vw;
     min-height: 100vh;
     font-family: 'Oswald', sans-serif;
 }
 
-main{
+main {
     width: 90%;
     display: block;
     margin: 0 auto;
 }
 
-.box-principal{
-    display:flex;
+.box-principal {
+    display: flex;
     min-height: 100vh;
-    background-color:#FAF7FD;
+    background-color: #FAF7FD;
 }
 
-.box-principal .box-esquerda{
+.box-principal .box-esquerda {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -35,36 +35,36 @@ main{
     justify-content: space-around;
 }
 
-.box-principal .box-esquerda .logo{
-   width: 88%;
+.box-principal .box-esquerda .logo {
+    width: 70%;
 }
 
-.box-principal .box-esquerda .content-perfil{
+.box-principal .box-esquerda .content-perfil {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.3rem;
 }
 
-.box-principal .box-esquerda .content-perfil .img-perfil{
+.box-principal .box-esquerda .content-perfil .img-perfil {
     width: 88%;
-    border:0.2rem solid #DB3A21;
+    border: 0.2rem solid #DB3A21;
     border-radius: 50%;
     padding: 0.2rem;
 }
 
-.box-principal .box-esquerda .content-perfil a{
+.box-principal .box-esquerda .content-perfil a {
     font-size: 1.5rem;
     color: #DB3A21;
 }
 
-.box-principal .box-esquerda .content-perfil a:hover{
+.box-principal .box-esquerda .content-perfil a:hover {
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-.box-principal .box-esquerda .social-fields{
+.box-principal .box-esquerda .social-fields {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -72,8 +72,8 @@ main{
     padding: 2rem 0;
 }
 
-.box-principal .box-esquerda .social-field{
-    display:block;
+.box-principal .box-esquerda .social-field {
+    display: block;
     margin: 0 auto;
     width: 70%;
     height: 25%;
@@ -81,7 +81,7 @@ main{
     cursor: pointer;
 }
 
-.box-principal .box-esquerda .social-field:hover{
+.box-principal .box-esquerda .social-field:hover {
     width: 80%;
     height: 30%;
 }
@@ -92,26 +92,30 @@ main{
 }
 
 .box-principal .box-esquerda .social-field a i {
-padding: 0.5rem 20% 0.5rem 7%;
+    padding: 0.5rem 20% 0.5rem 7%;
 }
 
-.box-principal .box-esquerda .social-field.facebook{
+.box-principal .box-esquerda .social-field.facebook {
     background: linear-gradient(to right, #1e3c72, #2a5298);
 }
-.box-principal .box-esquerda .social-field.twitter{
+
+.box-principal .box-esquerda .social-field.twitter {
     background: linear-gradient(to right, #56a7f2, #468aca);
 }
-.box-principal .box-esquerda .social-field.linkedin{
+
+.box-principal .box-esquerda .social-field.linkedin {
     background: linear-gradient(to right, #0E76A8, #468aca);
 }
 
-.box-principal .box-direita{
+.box-principal .box-direita {
     width: 80%;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    padding-bottom: 2rem;
 }
 
-.box-principal .box-direita .titulo{
+.box-principal .box-direita .titulo {
     font-family: 'Lobster', cursive;
     font-size: 5rem;
     display: block;
@@ -121,15 +125,15 @@ padding: 0.5rem 20% 0.5rem 7%;
     position: relative;
 }
 
-.grad1{
+.grad1 {
     color: #E73A16;
 }
 
-.grad2{
+.grad2 {
     color: #B43A16;
 }
 
-.box-principal .box-direita .titulo::before{
+.box-principal .box-direita .titulo::before {
     content: '';
     position: absolute;
     border-radius: 10px;
@@ -140,40 +144,77 @@ padding: 0.5rem 20% 0.5rem 7%;
     left: 0.1rem;
 }
 
-.box-principal .box-direita .flex{
-    max-width: 100%;
+.box-principal .box-direita .campo-publi{
+    max-width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 1rem;
+    gap: 2rem;
+    justify-content: space-around;
 }
 
-.box-principal .box-direita .flex img{
-    max-width: 200px;
+.box-principal .box-direita .campo-publi .publicacao{
+display: flex;
+flex-direction: column;
+border: 1px solid #B43A16;
+border-radius: 10px;
+gap: 1rem;
+align-items: center;
+padding: 1.2rem;
 }
 
-.box-principal .box-direita .flex > div{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    flex: 1 1 16rem;
-    margin: 0.5rem 0.3rem;
-    border: 1px solid #DB3A21;
-    border-radius: 1.5rem;
-    cursor: pointer;
+.box-principal .box-direita .campo-publi .publicacao:hover{
+    border: 3px solid #B43A16;
 }
 
-.box-principal .box-direita .flex > div:hover{
-     border: 3px solid #DB3A21;
+.box-principal .box-direita .campo-publi .publicacao img{
+    width: 250px;
+    height: 250px;
 }
 
-.box-principal .box-direita .flex p{
-    color: red;
+.box-principal .box-direita .campo-publi .publicacao span{
+    font-size: 1.5rem;
+    color: #B43A16;
     font-weight: 600;
-    padding-top: 5px;
 }
 
-@media only screen and (min-width: 451px) and (max-width: 845px){
-
-
+@media only screen and (min-width: 852px) and (max-width:1299px) {
+    .box-principal .box-esquerda {
+        justify-content: flex-start;
+        gap: 6%;
+    }    
 }
 
+@media only screen and (max-width: 851px){
+    .box-principal {
+        flex-direction: column;
+}
+
+    .box-principal .box-esquerda{
+        width: 100%;
+        gap: 1.2rem;
+    }
+
+    .box-principal .box-esquerda .logo{
+        padding-top: 2rem ;
+        width: 35%;
+    }
+
+    .box-principal .box-esquerda .content-perfil .img-perfil{
+        width: 70%;
+    }
+    .box-principal .box-esquerda .content-perfil a{
+        font-size: 300%;
+    }
+
+    .box-principal .box-esquerda .social-field {
+        width: 50%;
+    }
+    .box-principal .box-esquerda .social-field a i {
+        padding: 1.2rem 33% 1.2rem 7%;
+    }
+
+    .box-principal .box-direita {
+        width: 100%;
+    }
+
+}
